@@ -17,7 +17,7 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'RamahmdBot')
+SESSION = environ.get('SESSION', 'RamahhmdBot')
 API_ID = int(environ.get('API_ID', '28788775'))
 API_HASH = environ.get('API_HASH', 'caad67ac0ddcd546dcd3d768bde0a18a')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7543306218:AAGu9SrDAqk4NhCmiYKjKXzTIzrGV__d4wc")
@@ -30,9 +30,9 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5a6692324499f1662a1e0.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '6411381859'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002131110143'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6411381859').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1002088594612').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002088594612').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6411381859').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -52,11 +52,11 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ramadhanyusuf346:uKT03cWXNhcy5pny@cluster0.a8hwt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "ramadhanmdbot")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ramadhan0')
+DATABASE_NAME = environ.get('DATABASE_NAME', "mongodb")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ramadhan0011')
 
 # Premium And Referal Settings
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
@@ -71,8 +71,8 @@ CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "") # Necessary If clone 
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_bots')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/shuraa_islamic')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+hhviRLj8QQZiOTRk')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
 
