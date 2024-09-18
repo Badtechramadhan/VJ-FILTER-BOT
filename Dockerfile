@@ -10,7 +10,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /RAMADHANMD-BIT
-WORKDIR /RAMADHANMD-BIT
-COPY . /RAMADHANMD-BIT
+RUN mkdir /RAMAHHMD-BOT
+WORKDIR /RAMAHHMD-BOT
+COPY . /RAMAHHMD-BOT
 CMD ["python", "bot.py"]
