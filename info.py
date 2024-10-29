@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'RamahhmdBot')
 API_ID = int(environ.get('API_ID', '28788775'))
 API_HASH = environ.get('API_HASH', 'caad67ac0ddcd546dcd3d768bde0a18a')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7543306218:AAGu9SrDAqk4NhCmiYKjKXzTIzrGV__d4wc")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7538502413:AAEs3nsRCbYzdOCwJfG7hAt1yEwZrNrKZyk")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
